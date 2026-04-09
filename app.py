@@ -17,7 +17,7 @@ st.write("Versión de Python:", platform.python_version())
 
 # Sidebar information
 with st.sidebar:
-    st.subheader("Este Agente te ayudará a realizar análisis sobre el PDF cargado")
+    st.subheader("Este Agente te ayudará a realizar análisis sobre la moda, la estética y su relación de acuerdo al artículo cargado.")
     try:
         image = Image.open('img1.jpeg')
         st.image(image, width=200)
