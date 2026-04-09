@@ -23,6 +23,11 @@ except Exception as e:
 # Sidebar information
 with st.sidebar:
     st.subheader("Este Agente te ayudará a realizar análisis sobre el PDF cargado")
+    try:
+    image = Image.open('img1.jpeg')
+    st.image(image, width=350)
+except Exception as e:
+    st.warning(f"No se pudo cargar la imagen: {e}")
 
 # Get API key from user
 ke = st.text_input('Ingresa tu Clave de OpenAI', type="password")
