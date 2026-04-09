@@ -13,19 +13,24 @@ import platform
 st.title('Generación Aumentada por Recuperación (RAG) 💬')
 st.write("Versión de Python:", platform.python_version())
 
-# Load and display image
-try:
-    image = Image.open('Chat_pdf.png')
-    st.image(image, width=350)
-except Exception as e:
-    st.warning(f"No se pudo cargar la imagen: {e}")
+
 
 # Sidebar information
 with st.sidebar:
-    st.subheader("Este Agente te ayudará a realizar análisis sobre el PDF cargado")
+    # st.subheader("Este Agente te ayudará a realizar análisis sobre el PDF cargado")
     try:
         image = Image.open('img1.jpeg')
-        st.image(image, width=350)
+        st.image(image, width=250)
+    except Exception as e:
+        st.warning(f"No se pudo cargar la imagen: {e}")
+    try:
+        image = Image.open('img2.jpeg')
+        st.image(image, width=250)
+    except Exception as e:
+        st.warning(f"No se pudo cargar la imagen: {e}")
+    try:
+        image = Image.open('img3.jpeg')
+        st.image(image, width=250)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
 
