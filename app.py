@@ -20,7 +20,7 @@ with st.sidebar:
     st.subheader("Este agente te ayudará a realizar análisis rápidos sobre el artículo cargado. ✎ᝰ.ᐟ⋆⑅˚₊")
     try:
         image = Image.open('espacio.png')
-        st.image(image, width=320)
+        st.image(image, width=300)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
     
