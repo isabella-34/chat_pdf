@@ -19,8 +19,8 @@ st.write("Versión de Python:", platform.python_version())
 with st.sidebar:
     st.subheader("Este agente te ayudará a realizar análisis rápidos sobre el artículo cargado. ✎ᝰ.ᐟ⋆⑅˚₊")
     try:
-        image = Image.open('deco.png')
-        st.image(image, width=120)
+        image = Image.open('espacio.png')
+        st.image(image, width=220)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
     
