@@ -10,7 +10,7 @@ from langchain.chains.question_answering import load_qa_chain
 import platform
 
 # App title and presentation
-st.title('Moda y Estética')
+st.title('Moda y Estética 👠⋆˚✿˖° 𐙚 ₊ ⊹ ♡')
 st.write("Versión de Python:", platform.python_version())
 
 
@@ -20,17 +20,17 @@ with st.sidebar:
     st.subheader("Este Agente te ayudará a realizar análisis sobre la moda, la estética y su relación de acuerdo al artículo cargado.")
     try:
         image = Image.open('img1.jpeg')
-        st.image(image, width=200)
+        st.image(image, width=120)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
     try:
         image = Image.open('img2.jpeg')
-        st.image(image, width=200)
+        st.image(image, width=120)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
     try:
         image = Image.open('img3.jpeg')
-        st.image(image, width=200)
+        st.image(image, width=120)
     except Exception as e:
         st.warning(f"No se pudo cargar la imagen: {e}")
 
